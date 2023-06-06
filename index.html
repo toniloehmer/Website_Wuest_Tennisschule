@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Unbenanntes Dokument</title>
+	
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+	
+	<style>
+		
+		h3 {
+			color: #0780ce;
+			margin: 0;
+			margin-bottom: 1rem;
+		}
+		
+		h4 {
+			color: #0780ce;
+			margin: 0;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		
+		h5 {
+			color: #0780ce;
+			margin: 0;
+		}
+		
+		p {
+			margin: 0;
+		}
+		
+		.uk-navbar{
+			width: 100%;
+		}
+		
+		.uk-navbar-nav > li > a {
+			color: white;
+			font-size: 1.5rem;
+			padding-left: 7rem;
+			align-items: flex-end;
+			text-transform: none;
+		}
+		
+		.uk-navbar-right {
+			display: flex;
+			padding-left: 0rem;
+			margin-left: 30%;
+		}
+		
+		.uk-navbar-item {
+    		color: white;
+			align-items: baseline;
+			flex-direction: column;
+			justify-content: flex-end;
+			font-size: 1rem;
+		}
+		
+		.container {
+			display: flex;
+			width: 100%;
+			height: 100vh;
+			background-color: aqua;
+			flex-direction: column;
+		}
+		
+		.header {
+			display: flex;
+			width: 100%;
+			height: 11vh;
+			background-color: blueviolet;
+			border-bottom: 2px solid white;
+		}
+		
+		.col1-1 {
+			width: 40%;
+			background-color: #0780ce;
+			border-right: 2px solid white;
+		}
+		
+		.col1-2 {
+			display: flex;
+			width: 60%;
+			background-color: #0780ce;
+			border-left: 2px solid white;
+		}
+		
+		.content {
+			display: flex;
+			width: 100%;
+			height: 70vh;
+			background-color: brown;
+			border-top: 2px solid white;
+			border-bottom: 2px solid white;
+			box-sizing: inherit;
+		}
+		
+		.col2-1 {
+			width: calc(6% - 1px);
+			background-color: #0780ce;
+			border-right: 2px solid white;
+		}
+		
+		.col2-2 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 34%;
+			background-color: #0780ce;
+			border-left: 2px solid white;
+			border-right: 2px solid white;
+		}
+		
+		.conten1 {
+			display: flex;
+			width: 100%;
+			background-color: #0780ce;
+			border-bottom: 2px solid white;
+		}
+		
+		.conten2 {
+			display: flex;
+			width: 100%;
+			background-color: #0780ce;
+			border-top: 2px solid white;
+		}
+		
+		.picture-content2 {
+			width: 100%;
+			background-image: url("photo-1560012057-4372e14c5085.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		
+		.col2-3 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 34%;
+			background-color: #0780ce;
+			border-left: 2px solid white;
+			border-right: 2px solid white;
+		}
+		
+		.conten3 {
+			width: 100%;
+			background-color: #0780ce;
+			border-bottom: 2px solid white;
+		}
+		
+		.conten4 {
+			width: 100%;
+			background-color: #0780ce;
+			border-top: 2px solid white;
+		}
+		
+		.col2-4 {
+			display: flex;
+			width: 26%;
+			background-color: #0780ce;
+			border-left: 2px solid white;
+		}
+		
+		.picture2-4 {
+			width: 100%;
+			background-image: url("photo-1595435742656-5272d0b3fa82.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+		
+		.bottom {
+			display: flex;
+			width: 100%;
+			height: 11vh;
+			background-color: burlywood;
+			border-top: 2px solid white;
+			border-bottom: 2px solid white;
+		}
+		
+		.footer {
+			width: 100%;
+			height: 8vh;
+			background-color: #0780ce;
+			border-top: 2px solid white;
+		}
+		
+		.uk-grid {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0;
+    		margin-left: 0px;
+			padding: 1rem;
+			list-style: none;
+		}
+		
+		.uk-grid > * {
+    		left: 5rem;
+		}
+		
+		.uk-panel {
+			text-align: center;
+			color: white;
+		}
+		
+		.stoerer {
+			display: flex;
+			align-items: center;
+  			justify-content: center;
+			flex-direction: column;
+			width: 15rem;
+			height: 15rem;
+			position: absolute;
+			background-color: #f1e517;
+			bottom: 14vh;
+    		right: 44vh;
+			text-align: center;
+			border-radius: 50%;
+		}
+		
+		.logo {
+			display: flex;
+			align-items: center;
+  			justify-content: center;
+			width: 13.4%;
+			position: absolute;
+			top: 12vh;
+    		left: 1.7%;
+			text-align: center;
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+	
+	
+	<div class="container">
+		<div class="header">
+			<div class="col1-1"></div>
+			<div class="col1-2">
+				<nav class="uk-navbar" id="navbar" data-uk-navbar>
+					<div class="uk-navbar-left">
+						<ul class="uk-navbar-nav uk-visible@m">
+							<li><a href="#">Service</a></li>
+							<li><a href="#">Tarife</a></li>
+							<li><a href="#">Coach</a></li>
+						</ul>
+					</div>
+					
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-item" href="#">
+							<p><b>Hier anmelden!</b></p>
+							<p>Tel. 079 600 35 30</p>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="content">
+			<div class="col2-1">
+				<!-- <img src="tennis_schule.svg" alt=""> -->
+			</div>
+			<div class="col2-2">
+				<div class="conten1">
+					<!-- <img src="adrian_wuester.svg" alt=""> -->
+				</div>
+				<div class="conten2">
+					<div class="picture-content2"></div>
+				</div>
+			</div>
+			<div class="col2-3">
+				<div class="conten3"></div>
+				<div class="conten4"></div>
+			</div>
+			<div class="col2-4">
+				<div class="picture2-4"></div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="col1-1"></div>
+			<div class="col1-2"></div>
+		</div>
+		<div class="footer">
+			<div class="uk-grid-match uk-child-width-auto" uk-grid>
+                <div><div class="uk-panel"><b>Kontakt</b></div></div>
+                <div><div class="uk-panel"><b>Partnerfirmen</b></div></div>
+                <div><div class="uk-panel"><b>Tarife</b></div></div>
+                <div><div class="uk-panel"><b>Standorte</b></div></div>
+                <div><div class="uk-panel"><b>Disclaimer & Impressum</b></div></div>
+                <div><div class="uk-panel"><b>Datenschutz</b></div></div>
+            </div>
+		</div>
+	</div>
+	
+	<div class="stoerer">
+		<h3>Tennis lernen?</h3>
+		<h4>Hier kurzfristig Buchen!</h4>
+		<h5>Auch in 3 Sprachen!</h5>
+	</div>
+	
+	<div class="logo">
+		<img src="logo.svg" alt="">
+	</div>
+	
+</body>
+</html>

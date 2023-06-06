@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Unbenanntes Dokument</title>
+	
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+	
+	<style>
+		
+		h3 {
+			color: #0780ce;
+			margin: 0;
+			margin-bottom: 1rem;
+		}
+		
+		h4 {
+			color: #0780ce;
+			margin: 0;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		
+		h5 {
+			color: #0780ce;
+			margin: 0;
+		}
+		
+		p {
+			margin: 0;
+		}
+		
+		.uk-navbar{
+			width: 100%;
+			justify-content: space-between;
+		}
+		
+		.uk-navbar-nav {
+    		display: flex;
+    		margin: 0;
+    		padding: 0;
+    		list-style: none;
+			justify-content: space-between;
+			width: 75%;
+		}
+		
+		.uk-navbar-nav > li > a {
+			color: white;
+			font-size: 1.6rem;
+			align-items: flex-end;
+			text-transform: none;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 600;
+		}
+		
+		.uk-navbar-nav > li > a.first-margin {
+			padding-left: 3rem;
+		}
+		
+		.uk-navbar-left {
+			width: 66%;
+		}
+		
+		.uk-navbar-right {
+			display: flex;
+			padding-left: 0rem;
+			width: 200px;
+			
+		}
+		
+		.uk-navbar-item {
+    		color: white;
+			align-items: baseline;
+			flex-direction: column;
+			justify-content: flex-end;
+			font-size: 1rem;
+		}
+		
+		.container {
+			display: flex;
+			width: 100%;
+			height: 20vh;
+			background-color: aqua;
+			flex-direction: column;
+		}
+		
+		.header {
+			display: flex;
+			width: 100%;
+			height: 11vh;
+			background-color: blueviolet;
+			border-bottom: 2px solid white;
+		}
+		
+		.col1-1 {
+			width: 40%;
+			background-color: #0780ce;
+			border-right: 2px solid white;
+		}
+		
+		.col1-2 {
+			display: flex;
+			width: 60%;
+			background-color: #0780ce;
+			border-left: 2px solid white;
+		}
+		
+		.content {
+			display: flex;
+			width: 100%;
+			height: 15vh;
+			background-color: brown;
+			border-top: 2px solid white;
+			border-bottom: 2px solid white;
+			box-sizing: inherit;
+		}
+		
+		.col2-1 {
+			width: 40%;
+			background-color: #0780ce;
+			border-right: 2px solid white;
+		}
+		
+		.col2-1-1 {
+			width: 6vw;
+			height: 15vh;
+			background-color: #0780ce;
+			border-right: 4px solid white;
+		}
+		
+		.col2-1-2 {
+			width: 34vw;
+			height: 15vh;
+			background-color: #0780ce;
+			border-left: 2px solid white;
+		}
+		
+		.col2-2 {
+			display: flex;
+			flex-wrap: wrap;
+			width: 60%;
+			background-color: #0780ce;
+			border-left: 2px solid white;
+		}
+		
+		.logo {
+			display: flex;
+			align-items: center;
+  			justify-content: center;
+			width: 13.4%;
+			position: absolute;
+			top: 12vh;
+    		left: 1.7%;
+			text-align: center;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="header">
+			<div class="col1-1"></div>
+			<div class="col1-2">
+				<nav class="uk-navbar" id="navbar" data-uk-navbar>
+					<div class="uk-navbar-left">
+						<ul class="uk-navbar-nav uk-visible@m">
+							<li><a class="first-margin" href="#">Service</a></li>
+							<li><a href="#">Tarife</a></li>
+							<li><a href="#">Coach</a></li>
+						</ul>
+					</div>
+					
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-item" href="#">
+							<p><b>Hier anmelden!</b></p>
+							<p>Tel. 079 600 35 30</p>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="content">
+			<div class="col2-1">
+				<div class="col2-1-1">
+				</div>
+				
+				<!-- <img src="tennis_schule.svg" alt=""> -->
+			</div>
+			<div class="col2-2">
+				<div class="conten1">
+					<!-- <img src="adrian_wuester.svg" alt=""> -->
+				</div>
+				<div class="conten2">
+					<div class="picture-content2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="logo">
+		<img src="logo.svg" alt="">
+	</div>
+	
+</body>
+</html>

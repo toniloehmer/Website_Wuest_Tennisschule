@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>startseite</title>
+	
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+
+	<!-- UIkit JS -->
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+	
+</head>
+
+<body>
+	
+	<style>
+		
+		.uk-container {
+			display: flow-root;
+			box-sizing: content-box;
+			max-width: 192rem;
+			margin-left: 0rem;
+			margin-right: 0rem;
+			padding-left: 0rem;
+			padding-right: 0rem;
+		}
+		
+		.oben {
+			height: 15vh;
+		}
+		
+		.mitte {
+			height: 70vh;
+		}
+		
+		.unten {
+			height: 15vh;
+		}
+		
+		.uk-section {
+			background-color: darkseagreen;
+		}
+		
+		.uk-child-width-1-2 > * {
+    		width: 50%;
+			background-color: darkseagreen;
+		}
+		
+		.uk-panel {
+    		width: 50%;
+			background-color: darkseagreen;
+			border: 1px solid white;
+		}
+		
+		.uk-navbar-nav > li > a {
+			color: black;
+			font-size: 1.2rem;
+		}
+		
+		p {
+			color: black;
+		}
+		
+		
+	</style>
+	
+	<div class="uk-container">
+		<!--<h2>Tennisplatz</h2>-->
+		<!-- Erste Zeile -->
+		<div class="oben">
+		<div class="uk-grid-collapse uk-grid-match" uk-grid="masonry: true">
+			<div class="uk-width-2-5@m"><div class="uk-panel" style="height: 15vh" >
+				<header class="uk-box-shadow-none" style="background-color: darkseagreen">
+			<div class="uk-container uk-container-expand">
+				<nav class="uk-navbar" id="navbar" data-uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-navbar-item uk-logo" href="#">Logo</a>
+					</div>
+					
+					<div class="uk-navbar-right">
+						<ul class="uk-navbar-nav uk-visible@m">
+							<li><a href="#">Service</a></li>
+							<li><a href="#">Tarife</a></li>
+							<li><a href="#">Coach</a></li>
+						</ul>
+						<div class="uk-navbar-item">
+							<a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+			</div></div>
+            <div class="uk-width-3-5@m"><div class="uk-panel" style="height: 15vh">1-2</div></div>
+		</div>
+		</div>
+		<!-- Zweite Zeile -->
+		<div class="mitte">
+			
+		<div class="uk-grid-collapse uk-grid-match" uk-grid="masonry: true">
+			
+        	<div style="width: 5%">
+				<div class="uk-panel" style="height: 70vh">1-2-M</div>
+			</div>
+        	<div style="width: 35%">
+        	<div class="uk-panel" style="height: 35vh">
+				
+				<article class="uk-article uk-padding-small">
+    				<h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</article>
+				
+			</div>
+          	<div class="uk-panel" style="height: 35vh">1-2-M</div>
+           	</div>
+			<div style="width: 35%">
+        	<div class="uk-panel" style="height: 35vh">1-2-M</div>
+          	<div class="uk-panel uk-padding-small" style="height: 35vh">
+				<img src="http://source.unsplash.com/500x360/?tennis" alt="">
+			</div>
+           	</div>
+			<div style="width: 25%"><div class="uk-panel" style="height: 70vh">1-2-M</div></div>
+       	</div>
+		</div>
+		<!-- Dritte Zeile -->
+		<div class="unten">
+		<div class="uk-grid-collapse uk-child-width-1-2@m uk-grid-match" uk-grid="masonry: true">
+			<div><div class="uk-panel" style="height: 14.9vh">1-2</div></div>
+            <div><div class="uk-panel" style="height: 14.9vh">1-2</div></div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- OFFCANVAS -->
+		<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+			<div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+				<button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+				<ul class="uk-nav uk-nav-default">
+					<li class="uk-nav-header">Tennisschule</li>
+					<li class="uk-parent">
+						<a href="#">Service</a>
+						<ul class="uk-nav-sub">
+							<li><a href="#">Privatunterricht</a></li>
+							<li><a href="#">Mentales Coaching</a></li>
+							<li><a href="#">Schlagtechnik</a></li>
+							<li><a href="#">Beratung</a></li>
+							<li><a href="#">Verkauf</a></li>
+							<li><a href="#">Standorte</a></li>
+						</ul>
+					</li>
+					<li class="uk-parent">
+						<a href="#">Tarife</a>
+						<ul class="uk-nav-sub">
+							<li><a href="#">Einzeltraining</a></li>
+							<li><a href="#">Gruppentraining</a></li>
+						</ul>
+					</li>
+					<li class="uk-parent">
+						<a href="#">Tarife</a>
+						<ul class="uk-nav-sub">
+							<li><a href="#">Portrait</a></li>
+							<li><a href="#">Qualifikationen</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /OFFCANVAS -->
+	
+</body>
+</html>
+
+<article class="uk-article-vertical uk-padding-small uk-light">
+	<h1 class="uk-article-title uk-text-uppercase"><a class="uk-link-reset" href="">Tennis</a><br><a>Schule</a></h1>
+</article>
